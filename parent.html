@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent Page</title>
+</head>
+<body>
+    <iframe src="childe_3.html" name="outerFrame"></iframe>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myRange {
+            width: 100%; /* Set the width of the range input to 100% of its container */
+            height: 20px; /* Set the height of the range input */
+            -webkit-appearance: none; /* Remove default styling (for WebKit/Blink browsers) */
+            appearance: none; /* Remove default styling (for other browsers) */
+            }
+
+            #myRange::-webkit-slider-thumb {
+            -webkit-appearance: none; /* Remove default styling for thumb (for WebKit/Blink browsers) */
+            appearance: none; /* Remove default styling for thumb (for other browsers) */
+            width: 20px; /* Set the width of the thumb */
+            height: 20px; /* Set the height of the thumb */
+            background-color: #4CAF50; /* Set the color of the thumb */
+            cursor: pointer; /* Change cursor to pointer when hovering over the thumb */
+            }
+
+            #myRange::-moz-range-thumb {
+            width: 20px; /* Set the width of the thumb (for Firefox) */
+            height: 20px; /* Set the height of the thumb (for Firefox) */
+            background-color: #4CAF50; /* Set the color of the thumb (for Firefox) */
+            cursor: pointer; /* Change cursor to pointer when hovering over the thumb (for Firefox) */
+            }
+
+    </style>
+</head>
+<body>
+    <input type="range" id="myRange" min="0" max="50">
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=b, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Raleway';
+        }
+        .btn{
+            padding: 8px 20px;
+            width: 200px;
+            height:50px;
+            color: #ff0303;
+            font-weight: 700;
+            border-radius: 0;
+            text-transform: uppercase;
+            margin:25px;
+            overflow: hidden;
+            position: relative;
+        }
+        .btn::before{
+            content:"";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(120deg,transparent,#ffc,transparent)
+            ;transform: translateX(-100%);transition:0.6%;position: absolute;
+            
+        }
+        .btn:hover{
+            background: transparent;box-shadow: 0 0 20px 5px #ffc;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn">Neon Button</button>
+    <button class="btn">Neon Button</button>
+    <button class="btn">Neon Button</button>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="bondi.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="plate_logo.png" alt="no trouve pas" width="40px">
+            </a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#main" 
+                aria-controls="main" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+            >
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="#">About</a>
+                    </li><li class="nav-item">
+                        <a class="nav-link p-lg-3 " href="#"> Contact</a>
+                    </li>
+                </ul>
+                <div class="search ps-3 pe-3 d-none d-lg-block">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <a href="#" class="btn main-btn">Login</button></a>
+                
+            </div>
+        </div>
+      </nav>
+      <div class="landing d-flex justify-content-center align-items-center">
+        <div class="text-center text-light">
+            <h1>Taste the Creativity </h1>
+            <p class="text-white-50 mb-4"> we make awsome graphic and design</p>
+            <a href="#" class="btn main-btn">Get Started</button></a>
+        </div>
+      </div>
+      <div class="features text-center pt-4 pb-5">
+        <div class="container">
+            <div class="main-title mt-5 mb-5 position-relative">
+                <img class="mb-4" src="istockphoto-1090178232-612x612.jpg" alt="" width="80px">
+                <h2 >We are Good at</h2>
+                <p class="text-black-50 text-uppercase">Some Of This Stuff Under </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feat">
+                        <div class="icon-holder position-relative">
+                            <i class="fa-solid fa-1 position-absolute button-0 number"></i>
+                            <i class="fa-solid fa-pen fa-4x position-absolute button-0 icon"></i>
+                        </div>
+                        <h4 class="mb-3 mt-3 text-uppercase ">graphic design</h4>
+                        <p class="text-black-50 lh-lg">Pallentisque in ipsum id orci porta dapibus. vivamus mgna justo, lacinia eget consecteteur sed,
+                            convallis att telus</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="feat">
+                        <div class="icon-holder position-relative">
+                            <i class="fa-solid fa-2 position-absolute button-0 number"></i>
+                            <i class="fa-solid fa-tv fa-4x position-absolute button-0 icon"></i>
+                        </div>
+                        <h4 class="mb-3 mt-3 text-uppercase ">graphic design</h4>
+                        <p class="text-black-50 lh-lg">Pallentisque in ipsum id orci porta dapibus. vivamus mgna justo, lacinia eget consecteteur sed,
+                            convallis att telus</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" id>
+                    <div class="feat">
+                        <div class="icon-holder position-relative">
+                            <i class="fa-solid fa-3 position-absolute button-0 number"></i>
+                            <i class="fa-solid fa-plug fa-4x position-absolute button-0 icon"></i>
+                        </div>
+                        <h4 class="mb-3 mt-3 text-uppercase ">graphic design</h4>
+                        <p class="text-black-50 lh-lg">Pallentisque in ipsum id orci porta dapibus. vivamus mgna justo, lacinia eget consecteteur sed,
+                            convallis att telus</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/all.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 1 - pour center un element dans bootstrap on va creer <class container> اذا اردت ان تبتعد عن الهامش بكثير
+    2 - pour el n'ya pas center un element on va creer <class container-floid> اذا اردت ان تبتعد عن الهامش بقليل
+    3 - من اجل تقسيم مجموعه من العناصر نعتمد الطريقه التاليه tap1 = on va creer un div avec class row.
+        tap2 = on va creer u div avec class col-md="nombre que ve aprend paragraf المسافه التي يمكن اخذها من طرف العنصر" 
+        exemple :
+                <div class="row">
+                    <div class="col-md-6">
+                        crer element 
+                    </div>
+                </div>
+
+    

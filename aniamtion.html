@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        background: linear-gradient(135deg, #d0ef62, #636047, #ffffff); /* Gradient from dark brown to brown to white */
+        color: #333; /* Set text color to a darker shade for better contrast */
+        }
+
+
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+            padding-left:50px;
+
+        }
+        li a{
+
+            color: rgb(255, 222, 222);
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+        }
+        .underline{
+            border-bottom: 4px solid blue ;
+            padding-bottom:10px;
+            color: rgb(35, 14, 172);
+        }
+/* Partie Animation */ 
+        .container{
+            display:flex;
+            justify-content: center;
+            gap:50px;
+            margin-top:50px;
+        }
+        img{
+            height:300px;
+            width:400px;
+            max-width: 100%;
+            height: auto; 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 93, 93, 0.1); 
+            transition: transform .5s ease-in-out;
+        }
+        img:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+            box-shadow: #6d88e2;
+        }
+        .tooltip {
+            position: absolute;
+            background-color:transparent;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            display: none;
+            transition:2.1s;
+            opacity:0;
+            width:50vh;
+        }
+        @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scale-up {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+.tooltip {
+    position: absolute;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    transition: opacity 2s ease-in-out;
+}
+
+
+    .b1:hover .tooltip-1,
+    .b2:hover .tooltip-2,
+    .b3:hover .tooltip-3 {
+        display: block;
+        animation: fade-in 2s ease forwards, scale-up 0.5s ease forwards;
+    }
+
+    span{
+        display: flex;
+    }
+    span img{
+        width: 150px;
+        height: 100px;
+    }
+
+    </style>
+</head>
+<body>
+<h1>THE BEST FROM THE BEST</h1>
+<nav>
+    <ul>
+        <li><a  class="underline" href="windows.html">Bikes</a></li>
+        <li><a href="mac.html">Cars</a></li>
+        <li><a href="Androind.html">Top collection</a></li>
+        <li><a href="IOS.html">Warranty</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section class="container">
+        <div class="b1">
+            <img class="img-1" src="bmw.jpg" alt="no data">
+            <div class="tooltip tooltip-1">
+                <span>
+                    <img src="bike_details.jpg" alt="p">
+                    <img src="bike_details_2.jpg" alt="p">
+                    <img src="details_4.jpg" alt="9">
+                </span>
+            </div>
+        </div>
+        <div class="b2">
+            <img class="img-2" src="bike-2.jpg" alt="no data">
+            <div class="tooltip tooltip-2">
+                <span>
+                    <img src="ktm_part.jpg" alt="p">
+                    <img src="ktm-anishabad.avif" alt="p">
+                    <img src="btk-2.jpg" alt="9">
+                </span>
+            </div>
+        </div>
+        <div class="b3">
+            <img class="img-3" src="harley.webp" alt="no data">
+            <div class="tooltip tooltip-3">
+                <span>
+                    <img src="parts.webp" alt="p">
+                    <img src="parts_2.jpg" alt="p">
+                    <img src="parts_3.jpg" alt="9">
+                </span>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>
