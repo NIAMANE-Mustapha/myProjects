@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        body{
+            background-color: rgb(237, 237, 237);
+        }
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+        li{
+            padding-left:50px;
+
+        }
+        li a{
+
+            color: black;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 700;
+        }
+        .underline{
+            border-bottom: 4px solid blue ;
+            padding-bottom:10px;
+            color: rgb(35, 14, 172);
+        } 
+        .container{
+            display: flex;
+            justify-content: space-between;
+            margin-top:100px;
+        }  
+        .Logo-title{
+            display:flex;
+            width:300px;
+            gap:10px;
+        }
+        .container-2{
+            justify-content: center;
+            width: min-content;
+            z-index:1;
+            position:relative;
+        }
+        .Button{
+            display: flex;
+            justify-content:start;
+            margin-top:50px;
+
+        }
+        .btn-1{
+            width:500px;
+            height:40px;
+            color: blue;
+            background-color: aliceblue;
+        }
+        .btn-2{
+            color: blue;
+            background-color: aliceblue;
+            height:40px;
+            width:200px;
+        }
+        .btn-1,.btn-2:hover{
+            cursor: pointer;
+        }
+        input,label,select{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            margin-right:20px;
+            margin-bottom:20px;
+        }
+        .form{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+    }
+    p{
+        text-align: justify;
+    }
+    .info{
+        display: none;
+        position: absolute;
+        right: 100%;
+        top: 0;
+        padding: 0px 30px;
+        border: 4px solid rgba(0, 0, 255, 0.5); /* Adjust the RGBA values to your desired color */
+        background-color: rgba(255, 255, 255, 0.9);
+        animation: revealInfo 2s ease forwards;    
+        }
+        .info-first{
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        padding:0px 30px;
+        border: 4px solid rgba(0, 0, 255, 0.5); /* Adjust the RGBA values to your desired color */
+        background-color: rgba(255, 255, 255, 0.9);
+        animation: anim-1 2s ease forwards;   
+
+        }
+        @keyframes anim-1 {
+        from {
+            opacity: 0;
+            transform: translateX(+10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        }
+        .container-2:hover .info-first{
+        display: block;
+        cursor: pointer;
+        }
+
+        .container-2:hover .info{
+        display: block;
+        cursor: pointer;
+        }
+        @keyframes revealInfo {
+        from {
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        }
+        
+
+
+    </style>
+</head>
+<body>
+<h1>Best Tools & Utilities Software</h1>
+<nav>
+    <section>
+    <ul>
+        <li><a  class="underline" href="windows.html" target="_parent">Windows</a></li>
+        <li><a href="mac.html">MAC</a></li>
+        <li><a href="Androind.html">Androind</a></li>
+        <li><a href="IOS.html">IOS</a></li>
+    </ul>
+</section>
+</nav>
+<main>
+    <section class="container">
+        <div class="container-2">
+            <div class="Logo-title">
+                <img src="logo1.png" alt="no data">
+                <h3>VPN Gate Client Plug-in with Software VPN Client</h3>
+            </div>
+            <div class="info-first">
+                <h2>Details</h2>
+                <p>orem ipsum, dolor sit amet consectetur adipisicing</p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+            </p>
+        </div>
+        <div class="container-2">
+            <div class="Logo-title">
+                <img src="logo1.png" alt="no data">
+                <h3>SuperAntiSpywareFree Edition</h3>
+            </div>
+            <div class="info">
+                <h2>Details</h2>
+                <p>orem ipsum, dolor sit amet consectetur adipisicing</p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+            </p>
+        </div>
+        <div class="container-2">
+            <div class="Logo-title">
+                <img src="logo1.png" alt="no data">
+                <h3>Avira Free  Security</h3>
+            </div>
+            <div class="info">
+                <h2>Details</h2>
+                <p>orem ipsum, dolor sit amet consectetur adipisicing</p>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit
+            </p>
+        </div>
+        </div>
+    </section>
+    <section class="Button">
+        <Button class="btn-1"> SEE ALL</Button>
+        <Button class="btn-2"> Voter</Button>
+    </section>
+    <hr>
+    <section class="form">
+        <form action="data.php" >
+            <label for="Aname">1- Le meilleur Antivirus pour vous est:</label><br>
+            <select name="Aname" id="Aname">
+                <option value="Avira Free Security">Avira Free Security</option>
+                <option value="VPN GATE">VPN GATE</option>
+                <option value="SuperAntiSpyware">SuperAntiSpyware</option>
+            </select><br>
+            <label for="satisfaction">2- Votre degré de satisfaction est:</label><br>
+            0%<input type="range" name="satisfaction" min="0" max="100">100%<br>
+             <label for="usage">3- Avez-vous déja utilisé un autre antivirus?</label><br>
+            <input type="radio" name="usage" id="yes" value="yes">
+            <label for="yes">yes</label>
+            <input type="radio" name="usage" id="no" value="no">
+            <label for="no">no</label>
+
+            <input type="number" step="10" max="150" min="0">
+
+            <input type="submit" value="Envoyé">
+
+            <input type="reset" value="Annuler">  
+            <input type="hidden" name="dzd"  id="rrg">
+             <input type="file">
+        </form>
+        
+    </section>
+
+</main>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+</body>
+</html>
